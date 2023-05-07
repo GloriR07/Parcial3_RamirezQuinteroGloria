@@ -17,7 +17,7 @@ namespace Parcial3_RamirezQuinteroGloria.DAL.Entities
 
         public Service Service { get; set; } //clave Foranea
 
-        public ICollection<VehicleDatails> VehicleDatails { get; set; }
+        public ICollection<VehicleDatail> VehicleDatails { get; set; }
 
 
     }

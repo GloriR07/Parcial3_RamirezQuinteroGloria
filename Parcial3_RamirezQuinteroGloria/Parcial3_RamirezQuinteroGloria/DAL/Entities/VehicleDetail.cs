@@ -2,7 +2,7 @@
 
 namespace Parcial3_RamirezQuinteroGloria.DAL.Entities
 {
-    public class VehicleDatails : Entity
+    public class VehicleDatail : Entity
     {
         public int VehiculeId { get; set; }
 

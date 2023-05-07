@@ -12,7 +12,7 @@ namespace Parcial3_RamirezQuinteroGloria.DAL
         }
         public DbSet<Service> Services { get; set; } 
         public DbSet<Vehicle> Vehicles { get; set; }
-        public DbSet <VehicleDatails> VehicleDatails { get; set;}
+        public DbSet <VehicleDatail> VehicleDatails { get; set;}
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -20,7 +20,7 @@ namespace Parcial3_RamirezQuinteroGloria.DAL
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Service>().HasIndex(s => s .Name).IsUnique();
             modelBuilder.Entity<Vehicle>().HasIndex("Name", "ServiceId").IsUnique(); // índices compuestos
-            modelBuilder.Entity<VehicleDatails>().HasIndex("Name", "VehuculeId").IsUnique(); // índices compuestos
+            modelBuilder.Entity<VehicleDatail>().HasIndex("Name", "VehuculeId").IsUnique(); // índices compuestos
         }
 
     }
