@@ -7,6 +7,8 @@
 
         public float Price { get; set; }
 
+        public ICollection<Vehicle> Vehicles { get; set; }
 
+        //public int Servicenumber => Vehicles.Count;
     }
 }
